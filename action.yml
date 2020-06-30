@@ -1,10 +1,8 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
+name: 'Sass Tracker'
+description: 'Want less Sass? Track it.'
+author: 'JamOS'
+outputs:
+    release-url:
+        description: The URL of the release that was drafted.
+runs: using: 'node12'
+main: 'dist/index.js'
