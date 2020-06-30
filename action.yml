@@ -2,7 +2,8 @@ name: 'Sass Tracker'
 description: 'Want less Sass? Track it.'
 author: 'JamOS'
 outputs:
-    release-url:
-        description: The URL of the release that was drafted.
-runs: using: 'node12'
-main: 'dist/index.js'
+  release-url:
+    description: The URL of the release that was drafted.
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
