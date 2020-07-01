@@ -1,6 +1,5 @@
 import * as core from '@actions/core'
 import {run} from '../src/main'
-import {assert} from 'console'
 
 jest.mock('@actions/core')
 
@@ -9,8 +8,11 @@ describe('When we run the action', () => {
     typeof core.setOutput
   >
 
-  it('should set the release url output parameter ', async () => {
+  it('should set the sass-file-count output parameter ', async () => {
     await run()
-    expect(fakeSetOutput).toHaveBeenCalledWith('release-url', expect.anything())
+    expect(fakeSetOutput).toHaveBeenCalledWith(
+      'sass-file-count',
+      expect.anything()
+    )
   })
 })

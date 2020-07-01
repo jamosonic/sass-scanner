@@ -2,8 +2,8 @@ name: 'Sass Tracker'
 description: 'Want less Sass? Track it.'
 author: 'JamOS'
 outputs:
-  release-url:
-    description: The URL of the release that was drafted.
+  sass-file-count:
+    description: Number of sass files detected
 runs:
   using: 'node12'
   main: 'dist/index.js'

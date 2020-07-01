@@ -7,10 +7,7 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Get source
         uses: actions/checkout@v1
@@ -18,8 +15,8 @@ jobs:
         run: npm ci
       - name: Build and Package
         run: npm run all
-      - name: Create a release draft for a version tag
-        id: create-release-draft
+      - name: Scan for sass files
+        id: scan-for-sass
         uses: ./
-      - name: Print the URL of the release draft
-        run: echo ${{ steps.create-release-draft.outputs.release-url }}
+      - name: Print the number of sass files left
+        run: echo ${{ steps.scan-for-sass.outputs.sass-file-count }}
