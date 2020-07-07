@@ -10,9 +10,6 @@ describe('When we run the action', () => {
 
   it('should set the sass-file-count output parameter ', async () => {
     await run()
-    expect(fakeSetOutput).toHaveBeenCalledWith(
-      'sass-file-count',
-      expect.anything()
-    )
+    expect(fakeSetOutput).toHaveBeenCalledWith('sass-file-count', '6')
   })
 })

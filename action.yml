@@ -1,4 +1,4 @@
-name: 'Sass Tracker'
+name: 'Sass scanner'
 description: 'Want less Sass? Track it.'
 author: 'JamOS'
 outputs:

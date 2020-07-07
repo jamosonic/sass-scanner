@@ -1,5 +1,5 @@
 {
-  "name": "sass-tracker",
+  "name": "sass-scanner",
   "version": "0.0.0",
   "private": true,
   "description": "Want less Sass? Track it.",
@@ -28,22 +28,28 @@
     "@actions/core": "^1.2.0",
     "@actions/exec": "^1.0.4",
     "@actions/github": "^4.0.0",
+    "@actions/glob": "^0.1.0",
+    "sass-graph": "^3.0.5",
     "semver": "^7.3.2"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^26.0.4",
     "@types/node": "^12.7.12",
+    "@types/sass-graph": "^2.1.2",
     "@types/semver": "^7.3.1",
     "@typescript-eslint/parser": "^2.8.0",
     "@zeit/ncc": "^0.20.5",
     "eslint": "^5.16.0",
     "eslint-plugin-github": "^2.0.0",
     "eslint-plugin-jest": "^22.21.0",
-    "jest": "^24.9.0",
+    "jest": "^26.1.0",
     "jest-circus": "^24.9.0",
     "js-yaml": "^3.13.1",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.6.4"
+    "memfs": "^3.2.0",
+    "prettier": "^2.0.5",
+    "readdirp": "^3.4.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6",
+    "unionfs": "^4.4.0"
   }
 }
