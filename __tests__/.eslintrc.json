@@ -1,0 +1,10 @@
+{
+  "plugins": ["jest"],
+  "extends": ["plugin:jest/recommended"],
+  "parserOptions": {
+    "project": ["./tsconfig.test.json"]
+  },
+  "env": {
+    "jest/globals": true
+  }
+}
