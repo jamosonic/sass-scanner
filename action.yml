@@ -1,6 +1,10 @@
 name: 'Sass scanner'
 description: 'Want less Sass? Track it.'
 author: 'JamOS'
+inputs:
+  repo-token:
+    description: 'Github auth token'
+    required: true
 outputs:
   sass-file-count:
     description: Number of sass files detected

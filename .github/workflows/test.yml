@@ -15,5 +15,7 @@ jobs:
       - name: Scan for sass files
         id: scan-for-sass
         uses: ./
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Print the number of sass files left
         run: echo ${{ steps.scan-for-sass.outputs.sass-file-count }}
