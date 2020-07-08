@@ -7,7 +7,7 @@ export async function run(): Promise<void> {
   try {
     const graph = await getSassGraph('./')
     const report = buildReport(graph.index)
-    const token = core.getInput('repo-token')
+    const token = core.getInput('repo-token', {required: true})
     await createCheck({token, report})
   } catch (error) {
     core.setFailed(error.message)
