@@ -5,9 +5,6 @@ inputs:
   repo-token:
     description: 'Github auth token'
     required: true
-outputs:
-  sass-file-count:
-    description: Number of sass files detected
 runs:
   using: 'node12'
   main: 'dist/index.js'
