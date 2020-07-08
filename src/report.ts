@@ -6,7 +6,7 @@ export interface Report {
   text: string
 }
 
-export function buildReport(graph: SassGraph.Graph): Report {
+export function buildReport(graphIndex: SassGraph.Graph['index']): Report {
   const title = `Sass scanner`
   const summary = `
 ## :eyeglasses: You have sass
@@ -15,13 +15,14 @@ export function buildReport(graph: SassGraph.Graph): Report {
 | -- | -- | -- |
 | 3 | 4 | 3 |
 `
-  const text = `
-    /blah.scss
-    /blah.scss
-    `
+
+  const fileList = Object.keys(graphIndex)
+    .map(filePath => `${filePath}`)
+    .join('\n')
+
   return {
     title,
     summary,
-    text
+    text: fileList
   }
 }

@@ -6,7 +6,7 @@ import {buildReport} from './report'
 export async function run(): Promise<void> {
   try {
     const graph = await getSassGraph('./')
-    const report = buildReport(graph)
+    const report = buildReport(graph.index)
     const token = core.getInput('repo-token')
     await createCheck({token, report})
   } catch (error) {
