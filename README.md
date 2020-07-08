@@ -1,6 +1,6 @@
 # Sass scanner
 
-Trying to eradicate sass in your codebase? This simple github action lets you know how much you have left.  
+Trying to eradicate sass from your codebase? This simple github action tells you know how much you have left.  
 
 ## Inputs
 
