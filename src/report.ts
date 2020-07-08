@@ -8,12 +8,14 @@ export interface Report {
 
 export function buildReport(graphIndex: SassGraph.Graph['index']): Report {
   const title = `Sass scanner`
+  const internalSassCount = Object.keys(graphIndex).length
+
   const summary = `
 ## :eyeglasses: You have sass
 
-| Internal sass files | External sass imports | Orphans |
-| -- | -- | -- |
-| 3 | 4 | 3 |
+| Internal sass files |
+| -- |
+| ${internalSassCount} |
 `
 
   const fileList = Object.keys(graphIndex)

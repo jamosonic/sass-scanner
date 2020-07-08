@@ -39,9 +39,9 @@ describe('buildReport', () => {
     const expectedSummary = `
 ## :eyeglasses: You have sass
 
-| Internal sass files | External sass imports | Orphans |
-| -- | -- | -- |
-| 3 | 4 | 3 |
+| Internal sass files |
+| -- |
+| 6 |
 `
 
     const expectedText = `/fixtures/_c.scss
